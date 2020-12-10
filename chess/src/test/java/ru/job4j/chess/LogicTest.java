@@ -36,7 +36,7 @@ public class LogicTest {
         assertThat(rsl, is(true));
     }
 
-    @Test (expected = IllegalStateException.class)
+    @Test (expected = ImpossibleMoveException.class)
     public void moveImpossible()
             throws FigureNotFoundException, OccupiedCellException, ImpossibleMoveException {
         Logic logic = new Logic();
